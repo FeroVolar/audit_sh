@@ -30,8 +30,9 @@ This repository provides a **bash script** that automates collecting system info
 
 # With custom port and SSH key
 ./audit.sh -p 2222 -i ~/.ssh/id_ed25519 root@203.0.113.10
+```
 
-##📂 Example Output
+## 📂 Example Output
 	•	facts_<host>.json – full Ansible facts
 	•	packages_<host>.json – structured list of installed packages
 	•	services_<host>.json – registered services
@@ -41,7 +42,7 @@ This repository provides a **bash script** that automates collecting system info
 	•	top_cpu_<host>.txt, top_mem_<host>.txt – top processes
 	•	configs/ – selected configuration files from /etc
 
-##⚠️ Notes
+## ⚠️ Notes
 	•	Ensure your control node has LANG/LC_ALL set to UTF-8 (e.g. export LANG=C.UTF-8).
 	•	This script is read-only and does not make changes to the target server.
 	•	You can extend the list of configuration files in the playbook section cfg_candidates.
